@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#header{
+	height:auto;
+	
+}
+
+#name{
+	width:70%;
+	margin:auto;
+	padding-top:3%;
+	
+}
+
+#name p{
+	text-align:center;
+    color:#333131;
+	font-size: 50px;
+	font-family:helvetica;
+}
+
+
+#row{
+ 
+ display: flex; 
+ flex-wrap: wrap;	
+ padding: 0 4px;
+ margin:auto;
+ width:80%;
+}
+
+
+
+.column{
+
+	flex:32%;
+	max-width: 35%;
+  	padding: 0 4px;
+	
+}
+
+/*
+.item{
+	width:20%;
+	height:auto;
+	margin:10px;
+	
+}*/
+
+.column img{ 
+	/*width:100%;
+	height:auto;*/
+	
+	margin-top: 8px;
+  	vertical-align: middle;
+  	width: 100%;
+	
+}
+
+.logoColumn{
+	flex:25%;
+	max-width: 70%;
+  	padding: 0 4px;
+}
+
+#Content{
+	width:100%;
+	display:flex;
+	flex-wrap:nowrap;
+	margin:auto;
+	
+}
+
+.contentImgs{
+	width:60%;
+	display:flex;
+	flex-wrap:wrap;
+
+	
+}
+
+.contentImgs img{
+	width:100%;
+	margin:20px;
+	
+}
+
+.brochureDesc{
+	width:40%;
+	margin:50px;
+	margin-top:0px;
+	
+}
