@@ -4,22 +4,40 @@
 
 #header{
 	height:auto;
-	
+	background-color:antiquewhite;
 }
 
 #name{
 	width:70%;
 	margin:auto;
-	padding-top:3%;
+	padding-top:8%;
+	padding-bottom:8%;
 	
 }
 
 #name p{
 	text-align:center;
-    color:#333131;
+    color:cadetblue;
 	font-size: 50px;
-	font-family:helvetica;
+	font-family:Lato;
 }
+
+#nameSubPages{
+	width:70%;
+	margin:auto;
+	padding-top:4%;
+	padding-bottom:4%;
+}
+
+#nameSubPages p{
+	text-align:center;
+    color:cadetblue;
+	font-size: 50px;
+	font-family:Lato;
+}
+
+
+
 
 
 #row{
@@ -35,8 +53,8 @@
 
 .column{
 
-	flex:32%;
-	max-width: 35%;
+	flex:20%;
+	max-width: 25%;
   	padding: 0 4px;
 	
 }
@@ -66,25 +84,49 @@
 }
 
 #Content{
-	width:100%;
-	display:flex;
-	flex-wrap:nowrap;
+ 	
+	/*display:flex;
+	flex-direction: row;*/
+	/*flex-wrap:nowrap; */
+	/*flex-wrap:wrap;*/
 	margin:auto;
+	width:100%;
+	
 	
 }
 
+
 .contentImgs{
-	width:60%;
-	display:flex;
-	flex-wrap:wrap;
+    display:flex;
+	flex-direction: row;
+	
+	flex-wrap: wrap;
+	
+}
+
+
+.contentImgs a{
+	
+	/*
+	flex:25%;
+	max-width: 30%; 
+	padding:10px;*/
+/*	margin-left: 25px;
+	margin-right: 25px;*/
+	
+	
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	
 
 	
 }
 
 .contentImgs img{
-	width:100%;
-	margin:20px;
 	
+	width: 100%;
+
 }
 
 .brochureDesc{
@@ -93,3 +135,58 @@
 	margin-top:0px;
 	
 }
+
+
+   
+@media screen and (max-width: 600px) {
+	.contentImgs img{
+		
+		flex:100%;
+		flex-direction: column;
+		max-width: 100%; 
+		padding:0px;
+		padding-left:2%;
+		background-color:darkorange;
+	}
+
+	#Content{
+ 	
+		display:flex;
+	
+		/*flex-wrap:nowrap; */
+		flex-wrap:wrap;
+		margin:auto;
+		width:80%;
+		background-color:darkorange;
+		
+	}
+
+   } 
+ 
+
+   
+@media screen and (max-width: 992px) {
+	.contentImgs img{
+		
+		flex:25%;
+		flex-direction: column;
+		max-width: 45%; 
+		padding:0px;
+		padding-left:2%;
+		background-color: darkred;
+	}
+
+	#Content{
+ 	
+		display:flex;
+		flex-direction: column;
+		/*flex-wrap:nowrap; */
+		flex-wrap:wrap;
+		margin:auto;
+		width:80%;
+		background-color:darkorchid;
+		
+	}
+
+   } 
+ 
