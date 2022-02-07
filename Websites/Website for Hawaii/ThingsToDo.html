@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="ThingsToDo.css">
+    <title>Hawaii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin Sans:100,200,300,400,700|Caveat" rel="stylesheet"
+        type='text/css'>
+</head>
+
+<body onscroll="rightMenu()">
+    <div class="container">
+        <div id='topmenu' class="topmenu">
+           
+                <a href="homepage.html">
+                    Contact Us
+                </a>
+           
+                <a href="homepage.html">
+                    Book Now
+                </a>
+           
+                <a href="homepage.html">
+                    Request Info
+                </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="menu">
+                <a href="homepage.html" class="menuItem">
+                    Home
+                </a>
+                <a href="ThingsToDo.html" class="menuItem">
+                    Things To Do
+                </a>
+                <a href="Drink&Dine.html" class="menuItem">
+                    Drink & Dine
+                </a>
+                <a href="About.html" class="menuItem">
+                    About Us
+                </a>
+            </div>
+            <div class="hero-content">
+                <h1>Things to do</h1>
+                <h6>when in hawaii</h6>
+            </div>
+        </div>
+
+
+
+        <div>
+            <p>Some line describing the places</p>
+        </div>
+
+        <div class='listOfPlaces'>
+            <div class="eachPlace">
+                <div class="eachPlaceName">
+                    <h1>Big Island</h1>
+                </div>
+                <div class="eachPlaceImgDesc">
+                    <img src="Images/ThingsToDoImg1.jpg" />
+                    <div>The Big Island is the largest and most volcanically active of all Hawaiian islands.
+                        It is the largest island of the United States with a total surface of 4,029 square
+                        miles (10,433 square kilometers)! Its surface area is also greater than that of all other
+                        Hawaiian island combined. Our hands-down favorite beaches on the Big Island are Hapuna and
+                        Mauna Kea beach (white sand), Punaluʻu beach (black sand + turtles!)</div>
+                </div>
+            </div>
+            <div class="eachPlace">
+                <div class="eachPlaceName">
+                    <h1>Hawaii Volcanoes National Park</h1>
+                </div>
+                <div class="eachPlaceImgDesc">
+                    <img src="Images/ThingsToDoImg2.jpg" />
+                    <div>Big Island is the largest island in the archipelago, as well as the most recently formed,
+                        and Hawaii Volcanoes National Park is the best place in Hawaii to see the forces at work
+                        beneath the Earth’s crust. Here you can take in dark, sprawling lava fields strewn with
+                        boulders,
+                        steaming craters and cinder cones, and occasionally aglow with bubbling molten lava.</div>
+                </div>
+            </div>
+            <div class="eachPlace">
+                <div class="eachPlaceName">
+                    <h1>Pearl Harbor</h1>
+                </div>
+                <div class="eachPlaceImgDesc">
+                    <img src="Images/ThingsToDoImg2.jpg" />
+                    <div>I couldn’t pass through Oahu without visiting the place where the USA’s involvement in World
+                        War II
+                        first began. It was a moving experience visiting the site and seeing the names of more than
+                        2,400
+                        people who lost their lives engraved on the memorial plaque. While three of the sunken
+                        battleships
+                        were raised and returned to service, the USS Arizona still resides in its watery grave. Its
+                        memorial
+                        is built over the wreckage, so you can look down and see the submerged ship. Throughout the site
+                        are
+                        exhibits, displays and memorials related to the events leading up to the fateful day, what
+                        happened
+                        during the attack, and the people affected on both sides.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div>
+                <a href="#"><img src="Images/fb.png" width=50 height=50 /></a>
+            </div>
+            <div>
+                <a href="#"><img src="Images/insta.png" width=50 height=50 /></a>
+            </div>
+            <div>
+                <a href="#"><img src="Images/youtube.png" width=50 height=50 /></a>
+            </div>
+            <div>
+                <a href="#"><img src="Images/twitter.png" width=50 height=50 /></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function rightMenu() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("topmenu").className = "rightmenu";
+            } else {
+                document.getElementById("topmenu").className = "topmenu";
+            }
+        }
+    </script>
+</body>
+
+</html>
